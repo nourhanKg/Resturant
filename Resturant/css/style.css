@@ -1,0 +1,618 @@
+/*set up*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --subColor: rgb(44, 22, 9);
+    --mainColor: rgb(173, 121, 68);
+    --textColor: rgb(249, 155, 83);
+    --stylisFont: 'Dancing Script', cursive;
+}
+/*global styles*/
+.myBtn{
+    width: fit-content;
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: var(--mainColor, orangered);
+    color: white;
+    border-radius: 25px;
+}
+.myBtn:hover{
+    text-decoration: none;
+    color: white;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: .3s;
+    transition-timing-function: linear;
+}
+.myBtn.res{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: none;
+    box-shadow: 0px 0px 6px 1px rgb(54, 6, 6, .3);
+}
+.myBtn.cont{
+    background-color: var(--textColor, orangered);
+}
+.myBtn.serv{
+    margin: 50px auto;
+    background-color: var(--textColor, orangered);
+}
+.container-fluid {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+/*adding styles*/
+/*start home page*/
+/*header section*/
+.myBtn.header{
+    margin: 40px auto;
+}
+/*reset navbar*/
+.navbar-default{
+    background-color: rgb(0, 0, 0, .7);
+    border-radius: 0;
+    border: none;
+    min-height: 80px;
+}
+/*reset toggle*/
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--mainColor, orangered);
+}
+.navbar-toggle .icon-bar {
+    width: 30px; height: 3px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-toggle {
+    margin-top: 24px;
+}
+.navbar-default .navbar-collapse {
+    border-color: var(--subColor, brown);
+}
+/*styling links*/
+.navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--mainColor, orangered);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus  {
+    color: var(--mainColor, orangered);
+    background: none;
+}
+/*styling dropdown links*/
+.dropdown-menu {
+    border-radius: 0;
+    font-size: 16px;
+    min-width: 200px;
+    padding: 9px 0;
+    border-top: 2px solid var(--mainColor, orangered);
+}
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: var(--mainColor, orangered);
+    background: none;
+    background-color: var(--subColor, brown);
+}
+.dropdown-menu > li > a{
+    color: var(--mainColor, orangered);
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: var(--subColor, brown);
+    padding-left: 25px;
+    color: var(--mainColor, orangered);
+}
+/*styling brand name*/
+.navbar-default .navbar-brand {
+    color: var(--mainColor, orangered);
+}
+.navbar-brand {
+    font-family: var(--stylisFont);
+    font-size: 40px;
+    line-height: 40px;
+    height: 80px;
+    padding: 20px 15px;
+}
+.navbar-brand i{
+    padding-right: 3px;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: white;
+}
+/*slideshow styling*/
+header .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+}
+/*caption styling*/
+header .carousel-caption{
+    text-transform: capitalize;
+    right: 10%; left: 10%;
+}
+header .carousel-caption h2{
+    color: var(--textColor, orangered);
+    font-family: var(--stylisFont);
+    font-weight: 800;
+    font-size: 50px;
+}
+.carousel-caption p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+/*indicators styling*/
+.carousel-indicators li {
+    border-color: var(--textColor, orangered);
+}
+.carousel-indicators .active {
+    background-color: var(--textColor, orangered);
+}
+/*end header styling*/
+/*reservation section*/
+.reservation span{
+    font-family: var(--stylisFont);
+    color: var(--mainColor,orangered);
+    font-weight: 700; font-size: larger;
+}
+.reservation .form, .reservation .open{
+    background-color: rgb(44, 22, 9, .75);
+    padding: 30px;
+}
+.reservation h4, .reservation label{
+    color: var(--subColor, brown);
+}
+.reservation .open{
+    min-height: 390px;
+    margin-bottom: 30px;
+}
+.reservation .open p{
+    color: white;
+}
+.reservation input, .reservation textarea{
+    margin-bottom: 20px;
+}
+.reservation textarea{
+    height: 178px;
+} 
+.reservation input
+/*about section*/
+.about, .reservation{
+    margin-top: 90px; margin-bottom: 30px;
+    color: var(--subColor, brown);
+}
+h1{
+    color: var(--subColor, brown);
+    margin: 0; 
+    padding: 25px 0;
+    font-family: var(--stylisFont);
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.about img{
+    min-height: 300px;
+}
+.about .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.about p{
+    margin: 50px 0;
+}
+/*testimonial section*/
+.testimonials {
+    color: var(--subColor, brown);
+    margin-top: 50px;
+}
+.testimonials .carousel.slide{
+    box-shadow: 0 0 6px 1px var(--mainColor, orangered);
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+.testimonials .carousel .item{
+    min-height: 300px;
+}
+.testimonials .carousel-caption {
+    text-shadow: none;
+    color: var(--textColor, orangered);
+    right: 5%; left: 5%;
+}
+.testimonials .opinions {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials .opinions img {
+    width: 100px;
+    height: 100px;
+}
+.testimonials .opinions div:first-child {
+    min-width: 120px;
+}
+.testimonials .opinions div:not(:first-child) {
+    padding-left: 10px;
+}
+.testimonials .opinions i {
+    color: var(--mainColor, orangered);
+    padding: 20px 0;
+    font-size: larger;
+}
+.testimonials .opinions div.center-block {
+    width: fit-content;
+}
+.testimonials .opinions span{
+    font-weight: 600;
+    color: var(--subColor, brown);
+}
+.testimonials .carousel-caption{
+    top: 40px;
+}
+.testimonials .carousel-caption quote {
+    font-size: 18px;
+}
+.testimonials .carousel-caption span {
+    margin-top: 20px;
+}
+/*start footer styling*/
+footer{
+    background-color: rgb(0, 0, 0, .8);
+    margin-top: 40px;
+    padding-top: 20px;
+    color: white;
+}
+footer h4{
+    color: white;
+    margin-bottom: 20px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.foot a{
+    color: var(--mainColor, orangered);
+    text-decoration: none;
+    transition: .3s;
+}
+footer a:hover i, footer a:hover{
+    color: var(--textColor, orangered);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.links i{
+    padding: 10px;
+}
+.foot li{
+    margin: 5px 0;
+}
+.media{
+    overflow: hidden;
+}
+.media img{
+    width: 64px; height: 64px;
+}
+.copys{
+    background-color: rgb(0, 0, 0, .5);
+}
+.copys p{
+    margin-bottom: 0; padding: 20px;
+}
+.copys span{
+    color: var(--mainColor, orangered);
+}
+/*end footer styling*/
+/*start styling menu page*/
+/*styling menu carsoul*/
+.myBtn.header.slide{
+    background-color: var(--subColor, brown);
+    margin-top: 0;
+}
+.myBtn.menu{
+    margin: 20px auto;
+    background-color: var(--subColor, brown);
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.menu .intro{
+    margin-top: 80px;
+    padding: 0 30px;
+    color: var(--subColor, brown);
+}
+.intro span{
+    color: var(--textColor, orangered);
+    font-weight: 600;
+    font-size: 30px;
+    font-family: var(--stylisFont);
+}
+/*styling memu items*/
+main .container{
+    margin: 0 auto;
+    width: 90%;
+}
+.food{
+    margin: 40px 0;
+}
+.food h2{
+    color: var(--subColor, brown);
+    font-family: var(--stylisFont);
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.food .items{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 6px 1px var(--mainColor, orangered);
+    padding: 30px;
+    margin: 0 20px 40px;
+    position: relative;
+    overflow: hidden;
+}
+.items img{
+    width: 90%; 
+    max-width: 400px; 
+    height: 300px;
+}
+.items h4{
+    color: var(--mainColor, orangered);
+    font-weight: 600;
+    margin: 20px 0;
+}
+.items span{
+    color: var(--textColor, orangered);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.items p{
+    color: var(--subColor, brown);
+}
+#main .items{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#main h3{
+    color: var(--subColor, brown);
+    font-family: var(--stylisFont);
+    font-size: 35px;
+}
+/*styling main navtabs*/
+.nav.nav-tabs.nav-justified{
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--mainColor);
+}
+.nav-tabs.nav-justified > li a{
+    color: var(--mainColor, orangered);
+    font-size: 20px;
+    border: none;
+    transition: .3s;
+}
+.nav-tabs.nav-justified > .active a, 
+.nav-tabs.nav-justified > .active a:hover, .nav-tabs.nav-justified > .active a:focus,
+.nav-tabs.nav-justified > li a:hover, .nav-tabs.nav-justified > li a:focus{
+    border: none;
+    background: none;
+    color: var(--mainColor, orangered);
+}
+.nav-tabs.nav-justified > .active a:hover, .nav-tabs.nav-justified > .active a:focus,
+.nav-tabs.nav-justified > li a:hover, .nav-tabs.nav-justified > li a:focus{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+/*to make vedetrian ribbon*/
+.vegeterian::before{
+    content: "Vegeterian";
+    position: absolute;
+    background-color: var(--textColor, orangered);
+    width: 250px;
+    top: 40px;
+    left: -60px;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    box-shadow: 0 0 4px rgb(136, 136, 136);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/*end styling menu page*/
+/*start service page*/
+.services{
+    margin-top: 150px; margin-bottom: 80px;
+}
+.services p{
+    color: var(--subColor, brown);
+    margin-top: 40px;
+}
+.about .row{
+    margin-top: 30px;
+}
+.about i{
+    color: var(--mainColor, orangered);
+    padding-right: 20px;
+}
+.about i:hover{
+    color: var(--textColor,orangered);
+}
+/*end service page*/
+/*start styling contact page*/
+.contact{
+    margin-top: 80px;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.opacity{
+    background-color: rgb(0, 0, 0, .8);
+    padding: 60px 0;
+}
+.contact .info, .contact .form{
+    padding: 20px;
+}
+.contact label, .contact h2, .contact h4{
+    color: var(--mainColor, orangered);
+}
+.contact h4{
+    margin-top: 0;
+}
+.contact p{
+    margin-bottom: 20px;
+    color: white;
+}
+.form-control{
+    caret-color: var(--mainColor, orangered);
+    border: none;
+    outline: none;
+    border-radius: 0;
+    color: var(--subColor, brown);
+}
+.form-control:focus{
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+    0 0 8px rgb(249 155 83 / 60%);
+}
+.form-control[type="submit"]{
+    color: white;
+    background-color: var(--textColor, orangered);
+}
+.contact textarea{
+    height: 157px;
+}
+.map-responsive{
+    margin-top: 5px;
+}
+footer.remove{
+    margin-top: 0;
+}
+/*end styling contact page*/
+/*media queries*/
+@media (max-width: 767px) /*mobile devices*/
+{
+    /*navbar*/
+    .navbar-default{
+        background-color: rgb(0, 0, 0, .95);
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        background: none;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: var(--mainColor, orangered);
+    }
+    .dropdown-menu .divider{
+        background-color: var(--subColor, brown);
+    }
+    /*slideShow*/
+    header .carousel{
+        margin-top: 80px;
+    }
+    header .carousel .item {
+        height: calc(100vh - 80px);
+        min-height: 250px;
+    }
+    header .carousel-caption h2{
+        font-size: 30px;
+    }
+    /*testimonials*/
+    .testimonials .carousel .item{
+        min-height: 480px;
+    }
+    .testimonials .opinions{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .testimonials .opinions div:not(:first-of-type){
+        padding-left: 0;
+    }
+}
+@media (min-width: 768px) /*small screens*/{
+    /*slideShow*/
+    header .carousel-caption h2{
+        font-size: 40px;
+    }
+    header .carousel .item {
+        height: 100vh;
+    }
+}
+@media (min-width: 992px) /*medium screens*/ {
+    header .carousel .item {
+        max-height: 770px;
+    }
+    /*menu page*/
+    .menu .carousel.slide{
+        width: 50%;
+    }
+    .menu .carousel-caption{
+        height: 40px;
+        top: 60%;
+    }
+    .menu .intro{
+        width: 50%;
+        text-align: left;
+    }
+    .myBtn.menu{
+        margin: 20px 0;
+    }
+}
+@media (min-width: 1200px) /*medium screens*/ {
+    header .carousel .item {
+        min-height: 100vh;
+    }
+    /*contact page*/
+    .contact, .opacity {
+        height: calc(100vh - 80px);
+        max-height: 700px;
+    }
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernie's</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/aos.css" rel="stylesheet">
+    <link href="./css/modifiedBootsrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ed78bfa33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header><!--slider+navbar-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i>Vernie's</a>
+                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#about" target="_parent">About</a></li>
+                        <li class="dropdown">
+                            <a href="./menu.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./menu.html">All</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#salads">Salads</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#soups">Soups</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#appe">Appetizers &amp; Sides</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#main">Entrée</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#dessert">Dessert</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./service.html">Services</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!--carousel slider-->
+        <div id="slider" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="./images/carousel1.jpg" alt="food">
+                    <div class="carousel-caption">
+                    <h2>welcome to our resturant</h2>
+                    <p>Vernie's where the quality of food exceeds expectations.</p>
+                    <a href="#reservation" class="myBtn header">Make a Reservation</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/carousel2.jpg" alt="group">
+                    <div class="carousel-caption">
+                        <h2>share precious moments with your loved ones</h2>
+                        <p>Enjoy the elegant and cozy ambient along with classical music.</p>
+                        <a href="#reservation" class="myBtn header">Make a Reservation</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/carousel3.jpg" alt="resturant">
+                    <div class="carousel-caption">
+                        <h2>everything is prepared with your pleasure in mind</h2>
+                        <p>Our staff is highly trained and equiped to be friendly as much as professional.</p>
+                        <a href="#reservation" class="myBtn header">Make a Reservation</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <!--reservation-->
+        <section class="reservation text-center" data-aos="fade-down" data-aos-duration="3000">
+            <div class="container-fluid">
+                <h1>Book A Table</h1>
+                <p class="lead">Making a reservation at <span>Vernie's</span> is easy and takes just a couple of minutes.</p>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="open">
+                            <h4>Open Daily</h4>
+                            <p>Lunch: 2:00 - 6:00 PM</p>
+                            <p>Dinner: 6:00 - 9:00 PM</p>
+                            <h4>Saturdays - Wednesdays</h4>
+                            <p>Late Dinner: 9:00 PM - 12:00 AM</p>
+                            <h4>Thursdays - Fridays</h4>
+                            <p>Late Dinner: 9:00 PM - 1:00 AM</p>
+                            <h4>Dress Code</h4>
+                            <p>Our dress code is smart casual. We kindly ask our guests to refrain from wearing baseball caps or athletic wear.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="form">
+                            <form role="form">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" id="name" name="name" class="form-control input-lg" required placeholder="Name">
+                                            <textarea id="message" name="message" class="form-control" required maxlength="1500" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>    
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="tel" id="phone" name="phone" class="form-control input-lg" placeholder="Phone">
+                                            <input type="number" id="guests" name="guests" class="form-control input-lg" required placeholder="Guests">
+                                            <input type="text" id="date" name="date" class="form-control input-lg" required placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                            <select id="time" required class="form-control input-lg">
+                                                <option value="none">Time</option>
+                                                <option value="12.00">12.00Pm</option>
+                                                <option value="12.30">12.30Pm</option>
+                                                <option value="1.00">1.00Pm</option>
+                                                <option value="1.30">1.30Pm</option>
+                                                <option value="2.00">2.00Pm</option>
+                                                <option value="2.30">2.30Pm</option>
+                                                <option value="3.00">3.00Pm</option>
+                                                <option value="3.30">3.30Pm</option>
+                                                <option value="4.00">4.00Pm</option>
+                                                <option value="4.30">4.30Pm</option>
+                                                <option value="5.00">5.00Pm</option>
+                                                <option value="5.30">5.30Pm</option>
+                                                <option value="6.00">6.00Pm</option>
+                                                <option value="6.30">6.30Pm</option>
+                                                <option value="7.00">7.00Pm</option>
+                                                <option value="7.30">7.30Pm</option>
+                                                <option value="8.00">8.00Pm</option>
+                                                <option value="8.30">8.30Pm</option>
+                                                <option value="9.00">9.00Pm</option>
+                                                <option value="9.30">9.30Pm</option>
+                                                <option value="10.00">10.00Pm</option>
+                                                <option value="10.30">10.30Pm</option>
+                                                <option value="11.00">11.00Pm</option>
+                                                <option value="11.30">11.30Pm</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input class="form-control input-lg" type="submit" value="Book Now">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about-->
+        <section class="about text-center" id="about">
+            <h1>who are we?</h1>
+            <div class="container-fluid">
+                <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="col-sm-5 col-xs-12">
+                        <img class="img-responsive center-block" loading="lazy" src="./images/overview1.jpg" alt="dinner-table">
+                    </div>
+                    <div class="col-sm-7 col-xs-12 text-left">
+                        <p class="lead">We are a fine dinning resturant where you can unwind and enjoy a perfectly cooked meal. We serve a varity of dishes from intenational cousine, that caters to different palates.<br>We first opened in 2005 and since then we've been on top of the best resturants in the city.</p>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                    <div class="col-sm-5 col-xs-12 col-sm-push-7">
+                        <img class="img-responsive center-block" loading="lazy" src="./images/overview2.jpg" alt="dinner-table">
+                    </div>
+                    <div class="col-sm-7 col-xs-12 col-sm-pull-5 text-left">
+                        <p class="lead">Our chefs are experts in the culinary arts and our kitchen is equiped with the latest devices and gadgets.<br>Paying attention to the smallest details and using only fresh ingredients to present you with exquisite dishes.</p>
+                        <a href="#reservation" class="myBtn about">Make a Reservation</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--testimonials-->
+        <section class="testimonials text-center">
+            <h1>Reviwes</h1>
+            <div class="container-fluid">
+                <div id="testimonials" class="carousel slide center-block" data-ride="carousel" data-aos="zoom-in" data-aos-duration="1500">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonials" data-slide-to="1"></li>
+                        <li data-target="#testimonials" data-slide-to="2"></li>
+                        <li data-target="#testimonials" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-caption opinions text-left">
+                                <div>
+                                    <img src="./images/ben-parker.jpg" class="center-block img-circle">
+                                    <div class="center-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <quote>" Great food, amazing service and nice atmoshere. Definitely one of the best resturants in the city. "</quote>
+                                    <span class="text-right center-block">&tilde; Ben Parker &tilde;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption opinions text-left">
+                                <div>
+                                    <img src="./images/michael-dam.jpg" class="center-block img-circle">
+                                    <div class="center-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <quote>" The food is really fresh and the ingredients are carefully picked for every dish. Also loved the decorations. "</quote>
+                                    <span class="text-right center-block">&tilde; Micheal Dam &tilde;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption opinions text-left">
+                                <div>
+                                    <img src="./images/royal-anwar.jpg" class="center-block img-circle">
+                                    <div class="center-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <quote>" I had a great time coming with my wife on our anniversay. The food was delicious and serves was great. "</quote>
+                                    <span class="text-right center-block">&tilde; Royal Anwar &tilde;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption opinions text-left">
+                                <div>
+                                    <img src="./images/soan-parker.png" class="center-block img-circle">
+                                    <div class="center-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <quote>" I hired them to cater my wedding and everyone was impressed by how good the food was, very professional and impeccable service."</quote>
+                                    <span class="text-right center-block">&tilde; Soan Parker &tilde;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="foot col-xs-12 col-sm-6 col-md-4">
+                    <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i>Vernie's</a>
+                    <h4>Follow Us</h4>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="foot col-xs-12 col-sm-6 col-md-4">
+                    <h4>Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="foot col-xs-12 col-sm-12 col-md-4">
+                    <h4>Related Articles</h4>
+                    <div class="media">
+                        <a class="media-left" href="#"><img class="media-object" src="./images/article.png"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Best Resturants in The City</h4>
+                            We have made this list of the best resturants to save you some troubles!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copys"><p>Copyrights &copy; 2021, All Rights Reserved to <span>Nourhan A.AboElenen</span></p></div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/interactivity.js"></script>
+</body>
+</html>

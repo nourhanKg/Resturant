@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernie's</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/aos.css" rel="stylesheet">
+    <link href="./css/modifiedBootsrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ed78bfa33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header><!--slider+navbar-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="./index.html"><i class="fas fa-utensils"></i>Vernie's</a>
+                </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="./index.html">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="./index.html#about" target="_parent">About</a></li>
+                        <li class="dropdown">
+                            <a href="./menu.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./menu.html">All</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#salads">Salads</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#soups">Soups</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#appe">Appetizers &amp; Sides</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#main">Entrée</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="./menu.html#dessert">Dessert</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./service.html">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>    
+    </header>
+    <main>
+        <section class="contact">
+            <div class="opacity">
+                <div class="container" data-aos="fade-right" data-aos-duration="2000">
+                    <h2>Contact Us</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="info">
+                                <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+                                <p>94 Abd El-Aziz Fahmy, Heliopolis, Cairo, Egypt.</p>
+                                <h4><i class="far fa-envelope"></i> Email</h4>
+                                <p>anyone@example.com</p>
+                                <h4><i class="fas fa-phone-alt"></i> Phone</h4>
+                                <p>+1 978 555 5555, +1 978555 4444</p>
+                                <a href="./index.html#reservation" class="myBtn cont">Make a Reservation</a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form">
+                                <form role="form">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="name">Name<span>&ast;</span></label>
+                                                <input type="text" id="name" name="name" class="form-control input-lg" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email<span>&ast;</span></label>
+                                                <input type="email" id="email" name="email" class="form-control input-lg" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label id="phone">Phone</label>
+                                                <input type="tel" id="phone" name="phone" class="form-control input-lg">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="message">Message<span>&ast;</span></label>
+                                                <textarea id="message" name="message" class="form-control" required maxlength="1500"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control input-lg" type="submit" value="Send">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13805.464837531425!2d31.335095921788238!3d30.11233282164062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815dcc3e4e599%3A0x6c67c22e4aa39206!2sMasr%20Al%20Jadidah%2C%20Al%20Matar%2C%20El%20Nozha%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1615335898502!5m2!1sen!2seg" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </main>
+    <footer class="text-center remove">
+        <div class="container">
+            <div class="row">
+                <div class="foot col-xs-12 col-sm-6 col-md-4">
+                    <a class="navbar-brand" href="./index.html"><i class="fas fa-utensils"></i>Vernie's</a>
+                    <h4>Follow Us</h4>
+                    <div class="links">
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="foot col-xs-12 col-sm-6 col-md-4">
+                    <h4>Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="foot col-xs-12 col-sm-12 col-md-4">
+                    <h4>Related Articles</h4>
+                    <div class="media">
+                        <a class="media-left" href="#"><img class="media-object" src="./images/article.png"></a>
+                        <div class="media-body">
+                            <h4 class="media-heading">Best Resturants in The City</h4>
+                            We have made this list of the best resturants to save you some troubles!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copys"><p>Copyrights &copy; 2021, All Rights Reserved to <span>Nourhan A.AboElenen</span></p></div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
